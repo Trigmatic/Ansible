@@ -1,6 +1,6 @@
 ## **Ad-hoc Commands**
 
-- An Ad-Hoc command is a one-liner ansible command that performs one task on the target host(s)/group(s).
+- An Ad-Hoc command is a one-line ansible command that performs one task on the target host(s)/group(s).
 
 - Unlike playbooks — which consist of collections of tasks that can be reused — ad hoc commands are tasks that you don’t perform frequently, such as restarting a service or retrieving information about the remote systems that Ansible manages.
 
