@@ -1,5 +1,5 @@
 ---
-  - name: SimpldskjfgsadkgSL play to install multiple pkgs
+  - name: Simple play to install multiple pkgs
     hosts: web_servers
     gather-FACTS: true
     become: yes
