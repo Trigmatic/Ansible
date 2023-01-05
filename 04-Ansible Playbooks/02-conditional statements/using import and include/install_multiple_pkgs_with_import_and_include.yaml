@@ -4,11 +4,11 @@
     gather_facts: true
     become: yes
     tasks:
-      - import_tasks: install_webserver_RedHat.yml
+      - import_tasks: install_webserver_RedHat.yml  # use import when files/tasks are static
         when: ansible_os_family=="RedHat"
       - import_tasks: intall_webserver_Debian.yml
         when: ansible_os_family=="Debian"
-      - include_tasks: install_java_RedHat.yml
+      - include_tasks: install_java_RedHat.yml     # use include when files/tasks are dynamic
         when: ansible_os_family=="RedHat"
       - include_tasks: install_java_Debian.yml
         when: ansible_os_family=="Debian"
