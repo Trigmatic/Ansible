@@ -4,5 +4,5 @@
     gather_facts: true
     become: yes
     tasks:
-      - include_tasks: install_webserver_{{ansible_os_family}}.yml
+      - include_tasks: install_webserver_{{ansible_os_family}}.yml  #can not use import_tasks since this is referencing a dynamic file
       - include_tasks: install_java_{{ansible_os_family}}.yml
